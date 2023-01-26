@@ -72,7 +72,7 @@ section{
 }
 .home{
     width: 100%;
-    min-height: 90vh;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1.5rem;
@@ -283,7 +283,26 @@ section{
     color: var(--bg-color);
     background: var(--text-color);
 }
-
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+.boxOne{
+    transition-delay: 200ms;
+}
+.boxtwo{
+    transition-delay: 400ms;
+}
+.boxthree{
+    transition-delay: 600ms;
+}
 
 @media (max-width:1560px){
     header{
